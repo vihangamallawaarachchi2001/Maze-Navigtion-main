@@ -73,7 +73,7 @@ Visualization Manager:
       Arrow Length: 0.05
       Color: 0; 180; 0
     - Class: rviz_default_plugins/Path
-      Name: Dijkstra plan (/plan)
+      Name: A* plan (/plan)
       Enabled: true
       Topic:
         Value: /plan

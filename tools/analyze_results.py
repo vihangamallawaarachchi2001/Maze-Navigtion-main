@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
 import yaml  # noqa: E402
 
-sys.path.insert(0, os.path.expanduser("~/maze_testing/ros2_ws/src/maze_dqn"))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ros2_ws/src/maze_dqn"))
 from maze_dqn.grid_map import OccupancyMap  # noqa: E402
 
 COLORS = {"baseline": "#2f6db3", "dqn": "#d9822b"}

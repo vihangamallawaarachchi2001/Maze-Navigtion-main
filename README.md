@@ -1,86 +1,123 @@
-# IE4060 Assignment 02: Autonomous navigation of a TurtleBot3 Burger in a Gazebo maze
+# IE4060 Assignment 02 — TurtleBot3 maze navigation
 
-ROS 2 Jazzy · Gazebo Harmonic · SLAM Toolbox · AMCL · Nav2 (Dijkstra + Regulated Pure Pursuit)
-· goal-conditioned Deep Q-Network route planner (PyTorch).
+ROS 2 Jazzy, Gazebo Harmonic, SLAM Toolbox, AMCL, Nav2 Smac A* and a PyTorch
+Double DQN route planner. Ubuntu 24.04, Python 3.12. Repository URL: **add your GitHub URL**.
 
-Repository link: `<add GitHub URL here>`
+The supplied `image.png` is the maze reference. The original import is preserved
+in Git commit `1952a2e`. Imported `results/*.csv` and older documents describe
+another machine. **Use `results/current/` and `deliverables/FINAL_VERIFICATION.md`
+for this audit's measurements and limitations.**
 
-## Layout
+## Install and build
 
-```
-maps/reference/        geometry-derived map (NOT SLAM) - tests and scoring only
-maps/slam/             LiDAR SLAM map used for localisation, Nav2 and the DQN
-ros2_ws/src/maze_bringup   world, robot model, launch, params, RViz, goal adapter, trial tools
-ros2_ws/src/maze_dqn       DQN environment, network, training, evaluation, planner, tests, checkpoint
-tools/                 geometry generator, probes, offline SLAM replay, analysis, process control
-results/               trial CSVs, DQN training logs, analysis tables and figures
-docs/                  audit, progress log, provenance, architecture, member hand-offs, report
-```
-
-## One-time setup (no sudo)
+From the project folder (paths may contain spaces):
 
 ```bash
-curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj -C ~/.local bin/micromamba
-export MAMBA_ROOT_PREFIX=~/micromamba
-~/.local/bin/micromamba create -y -n ros_env -c conda-forge -c robostack-jazzy python=3.12 \
-  ros-jazzy-ros-base ros-jazzy-rviz2 ros-jazzy-navigation2 ros-jazzy-nav2-bringup ros-jazzy-slam-toolbox \
-  ros-jazzy-ros-gz ros-jazzy-teleop-twist-keyboard ros-jazzy-robot-state-publisher ros-jazzy-xacro \
-  ros-jazzy-tf2-tools ros-jazzy-rmw-cyclonedds-cpp colcon-common-extensions numpy matplotlib pyyaml \
-  pytorch-cpu pillow pytest git
-source ~/maze_testing/env.sh
-cd ~/maze_testing/ros2_ws && colcon build        # (not --symlink-install: fails with this setuptools)
-source ~/maze_testing/env.sh
+bash scripts/setup.sh                 # apt needs your sudo password; CPU torch in .venv
+bash scripts/build.sh
+source env.sh                        # do this in every new terminal
 ```
 
-`env.sh` must be sourced in **every** terminal.
+Setup adds the official ROS apt source, installs missing dependencies and does
+not upgrade the system. Native Jazzy installs its matched Harmonic through
+`ros-jazzy-ros-gz`. The included Burger is a simplified primitive model using
+Burger dimensions; no external TurtleBot download is required.
 
-## Daily use (each long-running command in its own terminal)
+## Run the demonstration
 
-Terminal 1, simulation (Gazebo GUI; add `headless:=true` for server only):
+Use separate terminals, each starting with `source env.sh` from this folder:
+
 ```bash
-source ~/maze_testing/env.sh && ros2 launch maze_bringup simulation.launch.py
-```
-Terminal 2, localisation + Nav2 + goal adapter + RViz (SLAM map, AMCL starts at the spawn pose):
-```bash
-source ~/maze_testing/env.sh && ros2 launch maze_bringup localization_navigation.launch.py
-```
-In RViz, use **2D Goal Pose** to click a destination. To switch the method:
-```bash
-ros2 param set /goal_adapter method dqn        # or baseline
-```
-If the robot was moved, use **2D Pose Estimate** first. Ctrl+C in each terminal stops everything.
-
-### Re-mapping (SLAM mode; do not run Nav2 at the same time)
-```bash
-ros2 launch maze_bringup simulation.launch.py headless:=true
-ros2 launch maze_bringup slam.launch.py
-ros2 run maze_bringup mapping_drive --ros-args -p use_sim_time:=true      # or teleop_twist_keyboard
-ros2 run nav2_map_server map_saver_cli -f ~/maze_testing/maps/slam/maze_slam --ros-args -p use_sim_time:=true
+ros2 launch maze_bringup simulation.launch.py render_engine:=ogre
+ros2 launch maze_bringup localization_navigation.launch.py
 ```
 
-### Background control with logs and PIDs (used for the experiments)
+`ogre` is the tested fallback for this VM: default `ogre2` crashed in Mesa.
+On a working GPU you can omit the override. For server only, add `headless:=true`;
+GPU LiDAR still needs a working rendering context. Run graphical commands in the
+VM desktop terminal; SSH does not automatically set DISPLAY/XAUTHORITY.
+
+In RViz use **2D Goal Pose**, click and drag to choose position and orientation.
+It publishes `/clicked_goal`. Use **2D Pose Estimate** if the robot has been moved.
+
 ```bash
-tools/sim_ctl.sh start sim maze_bringup simulation.launch.py headless:=true   # logs/sim.log
-tools/sim_ctl.sh start nav maze_bringup localization_navigation.launch.py rviz:=false
-tools/sim_ctl.sh stop nav ; tools/sim_ctl.sh stop sim
+ros2 param set /goal_adapter method dqn      # switch to learned route planning
+ros2 param set /goal_adapter method baseline # switch back to A*
 ```
 
-### DQN
-```bash
-cd ~/maze_testing/ros2_ws/src/maze_dqn
-python -m pytest -q test/test_grid.py
-python -m maze_dqn.train --config config/dqn.yaml --map ~/maze_testing/maps/slam/maze_slam.yaml --out ~/maze_testing/results/dqn_training
-python -m maze_dqn.evaluate --ckpt ~/maze_testing/results/dqn_training/dqn_policy.pt --split ~/maze_testing/results/dqn_training/split.yaml --out ~/maze_testing/results/dqn_training
-cp ~/maze_testing/results/dqn_training/dqn_policy.pt checkpoints/ && cd ~/maze_testing/ros2_ws && colcon build
-```
+Three goals, in metres in map frame: G1 `(0.25,-1.25,0)`, G2 `(-1.25,0.75,1.5708)`,
+G3 `(1.25,0.25,0)`. Trial start is `(-1.25,-1.25,0)`.
+Ctrl+C stops each launch. Do not run mapping and AMCL/navigation together.
 
-### Comparison trials and analysis
+## Reproducible trials and plots
+
+With simulation and navigation active:
+
 ```bash
 ros2 run maze_bringup run_trials --ros-args -p use_sim_time:=true \
-  -p goals_file:=$HOME/maze_testing/ros2_ws/src/maze_bringup/config/evaluation_goals.yaml -p repeats:=3
-python tools/analyze_results.py --trials results/trials.csv \
-  --goals ros2_ws/src/maze_bringup/config/evaluation_goals.yaml --map maps/slam/maze_slam.yaml \
-  --train results/dqn_training --out results/analysis
+  -p goals_file:="$MAZE_PROJECT_ROOT/ros2_ws/src/maze_bringup/config/evaluation_goals.yaml" -p repeats:=3
+python3 tools/analyze_results.py --trials results/current/trials.csv \
+  --goals ros2_ws/src/maze_bringup/config/evaluation_goals.yaml \
+  --map maps/slam/maze_slam.yaml --train results/dqn_training --out results/current/analysis
 ```
 
-See `docs/architecture.md`, `docs/map_provenance.md` and `docs/IMPLEMENTATION_REPORT.md`.
+The runner teleports to the common start and resets AMCL between trials; these
+operations occur outside measurement. It publishes goals on the clicked-goal
+interface, so repeat the actual RViz mouse demonstration for your VIVA. Logs
+append to `results/current/trials.csv`; use a new `results_csv:=...` launch argument
+for a separate experiment. Default trial limit: 120 simulation seconds and 900
+wall seconds. Near-obstacle scan events are distinct from physical chassis contacts.
+
+## Mapping
+
+Start a fresh simulation at the spawn pose. Stop navigation first:
+
+```bash
+ros2 launch maze_bringup slam.launch.py
+ros2 run maze_bringup mapping_drive --ros-args -p use_sim_time:=true
+mkdir -p maps/current
+ros2 run nav2_map_server map_saver_cli -f "$MAZE_PROJECT_ROOT/maps/current/maze" --ros-args -p use_sim_time:=true -p map_subscribe_transient_local:=true -p save_map_timeout:=10.0
+```
+
+Open RViz with `rviz2 -d ros2_ws/src/maze_bringup/rviz/maze.rviz --ros-args -p use_sim_time:=true`.
+Load a saved map using `localization_navigation.launch.py map:=/absolute/path/map.yaml`.
+A changed map needs a retrained DQN checkpoint; its lattice signature is checked.
+`maps/reference/` is generated geometry, never SLAM evidence. The original
+`maps/slam/` is preserved separately from fresh mapping.
+
+## Deep Q-learning
+
+```bash
+export PYTHONPATH="$MAZE_PROJECT_ROOT/ros2_ws/src/maze_dqn:$PYTHONPATH"
+python3 -m maze_dqn.train --config ros2_ws/src/maze_dqn/config/dqn.yaml \
+  --map maps/slam/maze_slam.yaml --out results/current/dqn_training
+python3 -m maze_dqn.evaluate --ckpt ros2_ws/src/maze_dqn/checkpoints/dqn_policy.pt \
+  --map maps/slam/maze_slam.yaml --split results/dqn_training/split.yaml --out results/current/dqn_eval
+```
+
+Training uses a map-derived grid; the DQN chooses routes and Nav2's shared
+controller executes them in Gazebo. DQN does not directly learn wheel velocities.
+No classical route fallback is used. The supplied checkpoint is preserved; new
+training writes to a separate directory. Select a new checkpoint with
+`dqn_checkpoint:=/absolute/path/dqn_policy.pt` in the navigation launch.
+
+## Tests, evidence and limitations
+
+```bash
+source env.sh
+bash scripts/run_tests.sh
+cd ros2_ws && colcon test --python-testing pytest && colcon test-result --verbose
+```
+
+Logs: `evidence/logs/`; genuine window captures: `evidence/screenshots/`;
+report and VIVA notes: `deliverables/`. Capture manually with the VM screenshot
+shortcut if Wayland blocks screenshots. `tools/capture_windows.py` captures
+XComposite application buffers: pass pairs of X window IDs and PNG filenames
+(obtain IDs with `xwininfo -root -tree`). It requires DISPLAY and XAUTHORITY.
+
+Odometry uses Gazebo model pose plus noise, not wheel integration. Loop closing
+is disabled in the existing SLAM configuration. These simplify the experiment
+and limit transfer to real robots. The bumper covers chassis contact only;
+zero recorded contacts does not prove every robot part avoided every object.
+Grid hold-out evaluation uses one maze and does not prove generalization to new
+mazes. Original assignment PDF is absent; the user supplied the maze image.

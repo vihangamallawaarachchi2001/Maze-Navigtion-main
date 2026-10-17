@@ -5,6 +5,15 @@
   <description>IE4060 Assignment 02: maze world, TurtleBot3 Burger simulation, SLAM, AMCL, Nav2, clicked-goal adapter and trial logging.</description>
   <maintainer email="dewminigamage22@gmail.com">IE4060 group</maintainer>
   <license>MIT</license>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>action_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
   <exec_depend>rclpy</exec_depend>
   <exec_depend>ros_gz_sim</exec_depend>
   <exec_depend>ros_gz_bridge</exec_depend>

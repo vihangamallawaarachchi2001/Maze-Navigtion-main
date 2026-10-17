@@ -99,7 +99,7 @@ def main():
             # timeout is not a true terminal state: bootstrap through it
             buf.push(s, a, r, s2, float(done and info["event"] != "timeout"))
             s, total, gstep = s2, total + r, gstep + 1
-            if len(buf) >= cfg["warmup_steps"] and gstep % cfg["train_every"] == 0:
+            if len(buf) >= max(cfg["warmup_steps"], cfg["batch_size"]) and gstep % cfg["train_every"] == 0:
                 losses.append(agent.update(buf.sample(cfg["batch_size"])))
             if gstep % cfg["target_sync_steps"] == 0:
                 agent.sync_target()
@@ -127,7 +127,7 @@ def main():
                     "refine": lat.refine,
                     "signature": lat.signature(), "cells": [list(c) for c in lat.cells]},
         "map_yaml": omap.yaml_path,
-        "map_image_sha1": file_sha1(omap.yaml_path),
+        "map_yaml_sha1": file_sha1(omap.yaml_path),
         "max_steps": cfg["max_steps"],
         "config": cfg,
         "train_time_s": train_time,

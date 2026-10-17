@@ -1,4 +1,4 @@
-# Shared evaluation scenarios for the baseline (Nav2 Dijkstra) vs DQN comparison.
+# Shared evaluation scenarios for the baseline (Nav2 Smac A*) vs DQN comparison.
 # Coordinates in the SLAM map frame (== Gazebo world frame, docs/map_provenance.md), metres / radians.
 # Chosen from the maze graph (BFS from the spawn cell): moves / turns along the shortest cell route.
 world_name: assignment_maze

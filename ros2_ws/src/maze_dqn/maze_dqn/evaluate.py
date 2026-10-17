@@ -18,10 +18,11 @@ from .planner import DQNPlanner, PlanningError
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--ckpt", required=True)
+    ap.add_argument("--map", help="Map YAML override for a checkpoint moved from another machine")
     ap.add_argument("--split", required=True)
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
-    planner = DQNPlanner(a.ckpt)
+    planner = DQNPlanner(a.ckpt, map_yaml=a.map)
     with open(a.split) as f:
         split = yaml.safe_load(f)
     rows, summary = [], {}

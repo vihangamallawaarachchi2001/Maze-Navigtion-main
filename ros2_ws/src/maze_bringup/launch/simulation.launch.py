@@ -5,7 +5,7 @@ safe pose from config/safe_spawn.yaml, starts the ROS<->Gazebo bridge and
 robot_state_publisher. Ctrl+C shuts every process down together.
 
 TF authorities:
-  odom -> base_footprint             : Gazebo DiffDrive (bridged /tf)
+  odom -> base_footprint             : Gazebo OdometryPublisher (pose-derived, bridged /tf)
   base_footprint -> base_link -> ... : robot_state_publisher (URDF)
 """
 import os
@@ -30,7 +30,8 @@ def _setup(context):
         urdf = f.read()
 
     headless = LaunchConfiguration("headless").perform(context).lower() == "true"
-    gz_args = f"-r -v 2 {'-s ' if headless else ''}{world}"
+    engine = LaunchConfiguration("render_engine").perform(context)
+    gz_args = f'-r -v 2 --render-engine {engine} {"-s " if headless else ""}"{world}"'
 
     gz = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(
@@ -59,6 +60,8 @@ def generate_launch_description():
     return LaunchDescription([
         DeclareLaunchArgument("headless", default_value="false",
                               description="Run Gazebo server only (no GUI)"),
+        DeclareLaunchArgument("render_engine", default_value="ogre2",
+                              description="ogre2, or ogre for VM software-rendering fallback"),
         AppendEnvironmentVariable("GZ_SIM_RESOURCE_PATH", os.path.join(pkg, "models")),
         OpaqueFunction(function=_setup),
     ])

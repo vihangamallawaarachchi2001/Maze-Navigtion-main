@@ -5,7 +5,7 @@
   (wheel radius 0.033 m, separation 0.160 m, base_scan at (-0.032, 0, 0.172) from base_link,
   base_link 0.010 m above base_footprint). Visual geometry simplified to primitives.
   The SAME numbers are used in urdf/turtlebot3_burger.urdf (robot_state_publisher).
-  TF authority: DiffDrive -> odom->base_footprint ; robot_state_publisher -> all fixed/wheel links.
+  TF authority: OdometryPublisher -> odom->base_footprint ; robot_state_publisher -> all fixed/wheel links.
 -->
 <sdf version="1.9">
   <model name="turtlebot3_burger">

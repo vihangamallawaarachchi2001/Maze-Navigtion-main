@@ -13,7 +13,7 @@ import sys
 
 import numpy as np
 
-sys.path.insert(0, os.path.expanduser("~/maze_testing/ros2_ws/src/maze_dqn"))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ros2_ws/src/maze_dqn"))
 from maze_dqn.grid_map import OccupancyMap  # noqa: E402
 
 
@@ -34,7 +34,7 @@ def lookup(m, pts, grid):
 def main():
     slam = OccupancyMap(sys.argv[1])
     ref = OccupancyMap(sys.argv[2] if len(sys.argv) > 2 else
-                       os.path.expanduser("~/maze_testing/maps/reference/ground_truth_maze.yaml"))
+                       os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "maps/reference/ground_truth_maze.yaml"))
     s_occ = cell_centres(slam, slam.occupied)
     r_occ = cell_centres(ref, ref.occupied)
     d = np.empty(len(s_occ))

@@ -85,8 +85,9 @@ class GoalAdapter(Node):
         p("map_source", "slam")
         p("world_revision", "")
         p("dqn_checkpoint", "")
-        p("results_csv", os.path.expanduser("~/maze_testing/results/trials.csv"))
+        p("results_csv", os.path.join(os.environ.get("MAZE_PROJECT_ROOT", os.getcwd()), "results", "current", "trials.csv"))
         p("trial_timeout_s", 120.0)
+        p("trial_wall_timeout_s", 900.0)
         p("success_tolerance_m", 0.15)
         p("goal_min_clearance_m", 0.13)
         p("near_collision_range_m", 0.16)
@@ -246,6 +247,9 @@ class GoalAdapter(Node):
         if method == "dqn":
             if self.dqn is None:
                 self.get_logger().error("method=dqn but no dqn_checkpoint loaded")
+                row.update(action_result="planning_failed", success=0, timeout=0,
+                           notes="DQN checkpoint unavailable")
+                self.finish(row)
                 return
             from maze_dqn.planner import PlanningError
             try:
@@ -295,6 +299,9 @@ class GoalAdapter(Node):
         # ---------------- execution
         if not client.wait_for_server(timeout_sec=10.0):
             self.get_logger().error("Nav2 action server not available")
+            row.update(action_result="server_unavailable", success=0, timeout=0,
+                       notes="Nav2 action server not available")
+            self.finish(row)
             return
         with self.lock:
             self.rec = dict(length=0.0, rotation=0.0, w_sq=0.0, w_n=0, last_odom=None, min_range=float("inf"),
@@ -315,6 +322,10 @@ class GoalAdapter(Node):
                 preempted = True
                 break
             if (self.get_clock().now() - sim0).nanoseconds * 1e-9 > timeout_s:
+                timed_out = True
+                break
+            if time.monotonic() - wall0 > self.gp("trial_wall_timeout_s"):
+                notes.append("wall timeout: simulation may be stalled")
                 timed_out = True
                 break
             time.sleep(0.05)
@@ -365,7 +376,7 @@ class GoalAdapter(Node):
 
     def finish(self, row):
         path = os.path.expanduser(self.gp("results_csv"))
-        os.makedirs(os.path.dirname(path), exist_ok=True)
+        os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
         new = not os.path.exists(path)
         with open(path, "a", newline="") as f:
             w = csv.DictWriter(f, fieldnames=CSV_FIELDS)

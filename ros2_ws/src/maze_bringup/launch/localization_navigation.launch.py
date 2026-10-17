@@ -2,7 +2,7 @@
 
 Run after simulation.launch.py, with SLAM STOPPED (AMCL owns map->odom here).
 
-  ros2 launch maze_bringup localization_navigation.launch.py            # baseline (Dijkstra) mode
+  ros2 launch maze_bringup localization_navigation.launch.py            # baseline (Smac A*) mode
   ros2 launch maze_bringup localization_navigation.launch.py method:=dqn
   ros2 param set /goal_adapter method dqn                                 # switch at runtime
 
@@ -82,7 +82,7 @@ def generate_launch_description():
         DeclareLaunchArgument("dqn_checkpoint",
                               default_value=os.path.join(dqn_share, "checkpoints", "dqn_policy.pt")),
         DeclareLaunchArgument("results_csv",
-                              default_value=os.path.expanduser("~/maze_testing/results/trials.csv")),
+                              default_value=os.path.join(os.environ.get("MAZE_PROJECT_ROOT", os.getcwd()), "results", "current", "trials.csv")),
         DeclareLaunchArgument("rviz", default_value="true"),
         OpaqueFunction(function=_setup),
     ])

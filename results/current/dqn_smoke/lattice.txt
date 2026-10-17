@@ -1,0 +1,18 @@
+map=/home/vihanga/Maze-Navigtion-main/maps/slam/maze_slam.yaml
+offset=(0.28, 0.26)
+nodes=36
+signature=a0e4a38e41ccd977
+. o-o o-o o-o 
+  | | | | | | 
+. o o-o o-o o 
+  | |       | 
+. o o o-o o-o 
+  | | | |     
+. o o-o o-o o 
+  |       | | 
+. o-o-o-o-o o 
+    |       | 
+. o-o-o-o-o-o 
+              
+. . . . . . . 
+              

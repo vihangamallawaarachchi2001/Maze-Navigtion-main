@@ -18,7 +18,7 @@ P = np.array([(p.pose.position.x, p.pose.position.y) for p in r.result().result.
 plt.figure(figsize=(6, 6)); plt.imshow(img, cmap="gray", extent=(ox, ox + img.shape[1] * res, oy, oy + img.shape[0] * res))
 if len(P): plt.plot(P[:, 0], P[:, 1], "b-", lw=2, label=f"Nav2 Smac2D ({sum(math.dist(a, b) for a, b in zip(P, P[1:])):.2f} m)")
 if len(sys.argv) > 5:
-    sys.path.insert(0, os.path.expanduser("~/maze_testing/ros2_ws/src/maze_dqn")); from maze_dqn.planner import DQNPlanner
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ros2_ws/src/maze_dqn")); from maze_dqn.planner import DQNPlanner
     d = DQNPlanner(sys.argv[5], map_yaml=sys.argv[1]); pts, _ = d.plan((-1.25, -1.25), (gx, gy))
     D = np.array([(p[0], p[1]) for p in pts]); plt.plot(D[:, 0], D[:, 1], "-", color="#d9822b", lw=2, label=f"DQN ({d.path_length(pts):.2f} m)")
 plt.plot(gx, gy, "r*", ms=14); plt.legend(loc="upper left", fontsize=8); plt.title("planned routes on the SLAM map"); plt.savefig(sys.argv[4], dpi=110, bbox_inches="tight")

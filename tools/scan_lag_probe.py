@@ -15,7 +15,7 @@ from rclpy.qos import qos_profile_sensor_data
 from maze_dqn.grid_map import OccupancyMap
 
 ref = OccupancyMap(sys.argv[3] if len(sys.argv) > 3 else
-                   __import__("os").path.expanduser("~/maze_testing/maps/reference/ground_truth_maze.yaml"))
+                   __import__("os").path.join(__import__("os").path.dirname(__import__("os").path.dirname(__file__)), "maps/reference/ground_truth_maze.yaml"))
 rclpy.init(); n = rclpy.create_node("scan_lag", parameter_overrides=[rclpy.parameter.Parameter("use_sim_time", value=True)])
 odo_t, odo_p, scans = [], [], []
 def yaw(q): return math.atan2(2*(q.w*q.z+q.x*q.y), 1-2*(q.y*q.y+q.z*q.z))
