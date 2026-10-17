@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "counts": {
+    "scan": 2,
+    "odom": 2,
+    "clock": 3,
+    "tf": 1,
+    "map": 1,
+    "pubsub": 2
+  },
+  "details": {
+    "scan_beams": 360,
+    "map_cells": 9360,
+    "known_map_cells": 3987
+  }
+}

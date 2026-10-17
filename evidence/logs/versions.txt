@@ -1,0 +1,5 @@
+ros-jazzy-gz-sim-vendor	0.0.13-1noble.20260905.073557
+ros-jazzy-nav2-bringup	1.3.13-1noble.20261006.042503
+ros-jazzy-ros-base	0.11.0-1noble.20261006.035407
+ros-jazzy-ros-gz	1.0.24-1noble.20261006.041805
+ros-jazzy-slam-toolbox	2.8.5-1noble.20260915.204151

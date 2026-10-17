@@ -1,0 +1,12 @@
+[0m[INFO] [1792259636.355243519] [map_saver]: 
+	map_saver lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.[0m
+[0m[INFO] [1792259636.355500968] [map_saver]: Creating[0m
+[0m[INFO] [1792259636.356023468] [map_saver]: Configuring[0m
+[0m[INFO] [1792259636.362401820] [map_saver]: Saving map from 'map' topic to '/home/vihanga/Maze-Navigtion-main/maps/current/maze' file[0m
+[33m[WARN] [1792259636.362478926] [map_saver]: Free threshold unspecified. Setting it to default value: 0.250000[0m
+[33m[WARN] [1792259636.362506614] [map_saver]: Occupied threshold unspecified. Setting it to default value: 0.650000[0m
+[31m[ERROR] [1792259638.376926447] [map_saver]: Failed to spin map subscription[0m
+[0m[INFO] [1792259638.389892295] [map_saver]: Destroying[0m
+[ros2run]: Process exited with failure 1

@@ -1,0 +1,5 @@
+lattice: 36 nodes, offset (0.28, 0.26), signature a0e4a38e41ccd977
+ep    100 eps 0.472 greedy success train 0.015 held-out 0.037 (3s)
+ep    200 eps 0.050 greedy success train 0.070 held-out 0.074 (54s)
+ep    300 eps 0.050 greedy success train 0.090 held-out 0.111 (181s)
+saved checkpoint after 181s, 4371 steps

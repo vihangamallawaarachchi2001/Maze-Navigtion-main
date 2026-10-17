@@ -1,0 +1,12 @@
+[0m[INFO] [1792258796.912222161] [trial_runner]: rep 1/1 G1_short_corridor baseline[0m
+[0m[INFO] [1792258813.860790813] [trial_runner]:   -> succeeded success=1[0m
+[0m[INFO] [1792258821.538577296] [trial_runner]: rep 1/1 G1_short_corridor dqn[0m
+[0m[INFO] [1792258837.160735158] [trial_runner]:   -> succeeded success=1[0m
+[0m[INFO] [1792258844.999050863] [trial_runner]: rep 1/1 G2_turning baseline[0m
+[0m[INFO] [1792258881.173584602] [trial_runner]:   -> succeeded success=1[0m
+[0m[INFO] [1792258888.719053712] [trial_runner]: rep 1/1 G2_turning dqn[0m
+[0m[INFO] [1792258919.857946930] [trial_runner]:   -> succeeded success=1[0m
+[0m[INFO] [1792258927.467095120] [trial_runner]: rep 1/1 G3_far baseline[0m
+[0m[INFO] [1792259027.610255137] [trial_runner]:   -> succeeded success=1[0m
+[0m[INFO] [1792259035.522319959] [trial_runner]: rep 1/1 G3_far dqn[0m
+[0m[INFO] [1792259121.174235185] [trial_runner]:   -> succeeded success=1[0m

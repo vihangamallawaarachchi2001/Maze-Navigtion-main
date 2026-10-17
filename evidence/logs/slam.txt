@@ -1,0 +1,16 @@
+[INFO] [launch]: All log files can be found below /home/vihanga/.ros/log/2026-10-17-23-18-04-490191-vihanga-Standard-PC-Q35-ICH9-2009-61736
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [async_slam_toolbox_node-1]: process started with pid [61762]
+[async_slam_toolbox_node-1] [0m[INFO] [1792259286.732108879] [slam_toolbox]: Node using stack size 40000000[0m
+[async_slam_toolbox_node-1] [0m[INFO] [1792259286.964496994] [slam_toolbox]: Configuring[0m
+[async_slam_toolbox_node-1] [0m[INFO] [1792259286.999460113] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver[0m
+[async_slam_toolbox_node-1] [0m[INFO] [1792259287.002098142] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.[0m
+[INFO] [launch.user]: [LifecycleLaunch] Slamtoolbox node is activating.
+[async_slam_toolbox_node-1] [0m[INFO] [1792259287.108887250] [slam_toolbox]: Activating[0m
+[async_slam_toolbox_node-1] Info: clipped range threshold to be within minimum and maximum range!
+[async_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar]
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [async_slam_toolbox_node-1]: sending signal 'SIGINT' to process[async_slam_toolbox_node-1]
+[async_slam_toolbox_node-1] [0m[INFO] [1792259781.457143960] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[async_slam_toolbox_node-1] Unregistering sensor: Custom Described Lidar
+[INFO] [async_slam_toolbox_node-1]: process has finished cleanly [pid 61762]

@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/vihanga/Maze-Navigtion-main/ros2_ws/src/maze_dqn/maze_dqn/evaluate.py", line 69, in <module>
+    main()
+  File "/home/vihanga/Maze-Navigtion-main/ros2_ws/src/maze_dqn/maze_dqn/evaluate.py", line 25, in main
+    planner = DQNPlanner(a.ckpt, map_yaml=a.map)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vihanga/Maze-Navigtion-main/ros2_ws/src/maze_dqn/maze_dqn/planner.py", line 24, in __init__
+    ck = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vihanga/Maze-Navigtion-main/.venv/lib/python3.12/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vihanga/Maze-Navigtion-main/.venv/lib/python3.12/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vihanga/Maze-Navigtion-main/.venv/lib/python3.12/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/current/dqn_smoke/dqn_policy.pt'

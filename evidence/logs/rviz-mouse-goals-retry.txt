@@ -1,0 +1,14 @@
+[0m[INFO] [1792259998.148665343] [trial_runner]: rep 1/1 G1_short_corridor baseline[0m
+RViz mouse goal 1: nominal (0.25,-1.25); actual coordinates logged by adapter
+evidence/screenshots/clicked_G1_navigating.png ((0, 255), (0, 255), (0, 255))
+[0m[INFO] [1792260014.302019859] [trial_runner]:   -> succeeded success=1[0m
+evidence/screenshots/clicked_G1_result.png ((0, 255), (0, 255), (0, 255))
+[0m[INFO] [1792260022.608880318] [trial_runner]: rep 1/1 G2_turning baseline[0m
+RViz mouse goal 2: nominal (-1.25,0.75); actual coordinates logged by adapter
+evidence/screenshots/clicked_G2_navigating.png ((0, 255), (0, 255), (0, 255))
+[0m[INFO] [1792260053.841415959] [trial_runner]:   -> succeeded success=1[0m
+evidence/screenshots/clicked_G2_result.png ((0, 255), (0, 255), (0, 255))
+[0m[INFO] [1792260062.224863078] [trial_runner]: rep 1/1 G3_far baseline[0m
+RViz mouse goal 3: nominal (1.25,0.25); actual coordinates logged by adapter
+evidence/screenshots/clicked_G3_navigating.png ((0, 255), (0, 255), (0, 255))
+[0m[INFO] [1792260160.385433175] [trial_runner]:   -> succeeded success=1[0m

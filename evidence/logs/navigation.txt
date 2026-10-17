@@ -1,0 +1,726 @@
+[INFO] [launch]: All log files can be found below /home/vihanga/.ros/log/2026-10-17-23-06-28-940867-vihanga-Standard-PC-Q35-ICH9-2009-59996
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [map_server-1]: process started with pid [60003]
+[INFO] [amcl-2]: process started with pid [60004]
+[INFO] [lifecycle_manager-3]: process started with pid [60005]
+[INFO] [controller_server-4]: process started with pid [60006]
+[INFO] [planner_server-5]: process started with pid [60007]
+[INFO] [behavior_server-6]: process started with pid [60008]
+[INFO] [bt_navigator-7]: process started with pid [60009]
+[INFO] [velocity_smoother-8]: process started with pid [60010]
+[INFO] [lifecycle_manager-9]: process started with pid [60011]
+[INFO] [goal_adapter-10]: process started with pid [60012]
+[controller_server-4] [0m[INFO] [1792258589.242425247] [controller_server]: 
+[controller_server-4] 	controller_server lifecycle node launched. 
+[controller_server-4] 	Waiting on external lifecycle transitions to activate
+[controller_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.[0m
+[controller_server-4] [0m[INFO] [1792258589.265858327] [controller_server]: Creating controller server[0m
+[controller_server-4] [0m[INFO] [1792258589.297695193] [local_costmap.local_costmap]: 
+[controller_server-4] 	local_costmap lifecycle node launched. 
+[controller_server-4] 	Waiting on external lifecycle transitions to activate
+[controller_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.[0m
+[controller_server-4] [0m[INFO] [1792258589.300608071] [local_costmap.local_costmap]: Creating Costmap[0m
+[lifecycle_manager-3] [0m[INFO] [1792258589.347235518] [lifecycle_manager_localization]: Creating[0m
+[lifecycle_manager-3] [0m[INFO] [1792258589.410403548] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m[0m
+[bt_navigator-7] [0m[INFO] [1792258589.416953430] [bt_navigator]: 
+[bt_navigator-7] 	bt_navigator lifecycle node launched. 
+[bt_navigator-7] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.[0m
+[bt_navigator-7] [0m[INFO] [1792258589.441561953] [bt_navigator]: Creating[0m
+[velocity_smoother-8] [0m[INFO] [1792258589.448911661] [velocity_smoother]: 
+[velocity_smoother-8] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-8] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.[0m
+[planner_server-5] [0m[INFO] [1792258589.505159603] [planner_server]: 
+[planner_server-5] 	planner_server lifecycle node launched. 
+[planner_server-5] 	Waiting on external lifecycle transitions to activate
+[planner_server-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.[0m
+[planner_server-5] [0m[INFO] [1792258589.517477437] [planner_server]: Creating[0m
+[amcl-2] [0m[INFO] [1792258589.530744720] [amcl]: 
+[amcl-2] 	amcl lifecycle node launched. 
+[amcl-2] 	Waiting on external lifecycle transitions to activate
+[amcl-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.[0m
+[map_server-1] [0m[INFO] [1792258589.532937794] [map_server]: 
+[map_server-1] 	map_server lifecycle node launched. 
+[map_server-1] 	Waiting on external lifecycle transitions to activate
+[map_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.[0m
+[map_server-1] [0m[INFO] [1792258589.533073888] [map_server]: Creating[0m
+[lifecycle_manager-9] [0m[INFO] [1792258589.535186161] [lifecycle_manager_navigation]: Creating[0m
+[amcl-2] [0m[INFO] [1792258589.536873424] [amcl]: Creating[0m
+[behavior_server-6] [0m[INFO] [1792258589.555878955] [behavior_server]: 
+[behavior_server-6] 	behavior_server lifecycle node launched. 
+[behavior_server-6] 	Waiting on external lifecycle transitions to activate
+[behavior_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.[0m
+[lifecycle_manager-3] [0m[INFO] [1792258589.565106001] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m[0m
+[lifecycle_manager-3] [0m[INFO] [1792258589.565194801] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m[0m
+[lifecycle_manager-9] [0m[INFO] [1792258589.566127381] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m[0m
+[lifecycle_manager-9] [0m[INFO] [1792258589.600384171] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m[0m
+[lifecycle_manager-9] [0m[INFO] [1792258589.600442422] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m[0m
+[controller_server-4] [0m[INFO] [1792258589.604697301] [controller_server]: Configuring controller interface[0m
+[controller_server-4] [0m[INFO] [1792258589.604755076] [controller_server]: getting progress checker plugins..[0m
+[controller_server-4] [0m[INFO] [1792258589.606619662] [controller_server]: getting goal checker plugins..[0m
+[controller_server-4] [0m[INFO] [1792258589.608367682] [controller_server]: Controller frequency set to 10.0000Hz[0m
+[controller_server-4] [0m[INFO] [1792258589.608454440] [local_costmap.local_costmap]: Configuring[0m
+[planner_server-5] [0m[INFO] [1792258589.634561035] [global_costmap.global_costmap]: 
+[planner_server-5] 	global_costmap lifecycle node launched. 
+[planner_server-5] 	Waiting on external lifecycle transitions to activate
+[planner_server-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.[0m
+[planner_server-5] [0m[INFO] [1792258589.636211964] [global_costmap.global_costmap]: Creating Costmap[0m
+[controller_server-4] [0m[INFO] [1792258589.658708616] [local_costmap.local_costmap]: Using plugin "obstacle_layer"[0m
+[controller_server-4] [0m[INFO] [1792258589.679521163] [local_costmap.local_costmap]: Subscribed to Topics: scan[0m
+[map_server-1] [0m[INFO] [1792258589.680067347] [map_server]: Configuring[0m
+[map_server-1] [0m[INFO] [1792258589.680145114] [map_io]: Loading yaml file: /home/vihanga/Maze-Navigtion-main/ros2_ws/install/maze_bringup/share/maze_bringup/maps/slam/maze_slam.yaml[0m
+[map_server-1] [0m[INFO] [1792258589.681253982] [map_io]: resolution: 0.025[0m
+[map_server-1] [0m[INFO] [1792258589.681283024] [map_io]: origin[0]: -1.514[0m
+[map_server-1] [0m[INFO] [1792258589.681303045] [map_io]: origin[1]: -1.536[0m
+[map_server-1] [0m[INFO] [1792258589.681308567] [map_io]: origin[2]: 0[0m
+[map_server-1] [0m[INFO] [1792258589.681313716] [map_io]: free_thresh: 0.196[0m
+[map_server-1] [0m[INFO] [1792258589.681348812] [map_io]: occupied_thresh: 0.65[0m
+[map_server-1] [0m[INFO] [1792258589.681364017] [map_io]: mode: trinary[0m
+[map_server-1] [0m[INFO] [1792258589.681369867] [map_io]: negate: 0[0m
+[map_server-1] [0m[INFO] [1792258589.682865831] [map_io]: Loading image_file: /home/vihanga/Maze-Navigtion-main/ros2_ws/install/maze_bringup/share/maze_bringup/maps/slam/maze_slam.pgm[0m
+[map_server-1] [0m[INFO] [1792258589.685002550] [map_io]: Read map /home/vihanga/Maze-Navigtion-main/ros2_ws/install/maze_bringup/share/maze_bringup/maps/slam/maze_slam.pgm: 123 X 124 map @ 0.025 m/cell[0m
+[controller_server-4] [0m[INFO] [1792258589.691958648] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"[0m
+[controller_server-4] [0m[INFO] [1792258589.692014051] [local_costmap.local_costmap]: Using plugin "inflation_layer"[0m
+[controller_server-4] [0m[INFO] [1792258589.694042297] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"[0m
+[lifecycle_manager-3] [0m[INFO] [1792258589.716160159] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m[0m
+[amcl-2] [0m[INFO] [1792258589.716588184] [amcl]: Configuring[0m
+[amcl-2] [0m[INFO] [1792258589.716702694] [amcl]: initTransforms[0m
+[amcl-2] [0m[INFO] [1792258589.759615762] [amcl]: initPubSub[0m
+[controller_server-4] [0m[INFO] [1792258589.774945957] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker[0m
+[controller_server-4] [0m[INFO] [1792258589.777509078] [controller_server]: Controller Server has progress_checker  progress checkers available.[0m
+[controller_server-4] [0m[INFO] [1792258589.781279074] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker[0m
+[controller_server-4] [0m[INFO] [1792258589.784154471] [controller_server]: Controller Server has general_goal_checker  goal checkers available.[0m
+[amcl-2] [0m[INFO] [1792258589.786031456] [amcl]: Subscribed to map topic.[0m
+[controller_server-4] [0m[INFO] [1792258589.787994189] [controller_server]: Created controller : FollowPath of type nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController[0m
+[lifecycle_manager-3] [0m[INFO] [1792258589.806146830] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m[0m
+[map_server-1] [0m[INFO] [1792258589.806798972] [map_server]: Activating[0m
+[amcl-2] [0m[INFO] [1792258589.807275765] [amcl]: Received a 123 X 124 map @ 0.025 m/pix[0m
+[map_server-1] [0m[INFO] [1792258589.807783184] [map_server]: Creating bond (map_server) to lifecycle manager.[0m
+[controller_server-4] [0m[INFO] [1792258589.812463347] [controller_server]: Controller Server has FollowPath  controllers available.[0m
+[lifecycle_manager-3] [0m[INFO] [1792258589.817240647] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m[0m
+[amcl-2] [0m[INFO] [1792258589.817879366] [amcl]: Activating[0m
+[amcl-2] [0m[INFO] [1792258589.817922737] [amcl]: initialPoseReceived[0m
+[amcl-2] [0m[INFO] [1792258589.818005752] [amcl]: Setting pose (0.000000): -1.250 -1.250 0.000[0m
+[amcl-2] [0m[INFO] [1792258589.818495553] [amcl]: Creating bond (amcl) to lifecycle manager.[0m
+[lifecycle_manager-3] [0m[INFO] [1792258589.827385281] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m[0m
+[lifecycle_manager-9] [0m[INFO] [1792258589.849383458] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m[0m
+[planner_server-5] [0m[INFO] [1792258589.850285820] [planner_server]: Configuring[0m
+[planner_server-5] [0m[INFO] [1792258589.850330863] [global_costmap.global_costmap]: Configuring[0m
+[planner_server-5] [0m[INFO] [1792258589.874415694] [global_costmap.global_costmap]: Using plugin "static_layer"[0m
+[planner_server-5] [0m[INFO] [1792258589.885348532] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability[0m
+[planner_server-5] [0m[INFO] [1792258589.891594980] [global_costmap.global_costmap]: Initialized plugin "static_layer"[0m
+[planner_server-5] [0m[INFO] [1792258589.892288287] [global_costmap.global_costmap]: Using plugin "obstacle_layer"[0m
+[planner_server-5] [0m[INFO] [1792258589.897526246] [global_costmap.global_costmap]: Subscribed to Topics: scan[0m
+[planner_server-5] [0m[INFO] [1792258589.903941878] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"[0m
+[planner_server-5] [0m[INFO] [1792258589.904008049] [global_costmap.global_costmap]: Using plugin "inflation_layer"[0m
+[planner_server-5] [0m[INFO] [1792258589.909037137] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"[0m
+[planner_server-5] [0m[INFO] [1792258589.980244641] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 123 X 124 at 0.025000 m/pix[0m
+[planner_server-5] [0m[INFO] [1792258590.032920282] [planner_server]: Created global planner plugin GridBased of type nav2_smac_planner::SmacPlanner2D[0m
+[planner_server-5] [0m[INFO] [1792258590.033029834] [planner_server]: Configuring GridBased of type SmacPlanner2D[0m
+[planner_server-5] [0m[INFO] [1792258590.043036145] [planner_server]: Configured plugin GridBased of type SmacPlanner2D with tolerance 0.10, maximum iterations 1000000, max on approach iterations 1000, and not allowing unknown traversal.[0m
+[planner_server-5] [0m[INFO] [1792258590.043114913] [planner_server]: Planner Server has GridBased  planners available.[0m
+[lifecycle_manager-9] [0m[INFO] [1792258590.077684251] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m[0m
+[behavior_server-6] [0m[INFO] [1792258590.079778424] [behavior_server]: Configuring[0m
+[behavior_server-6] [0m[INFO] [1792258590.100491673] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors::Spin[0m
+[behavior_server-6] [0m[INFO] [1792258590.105979923] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors::BackUp[0m
+[behavior_server-6] [0m[INFO] [1792258590.110878870] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors::DriveOnHeading[0m
+[behavior_server-6] [0m[INFO] [1792258590.114619016] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors::Wait[0m
+[behavior_server-6] [0m[INFO] [1792258590.137371462] [behavior_server]: Configuring spin[0m
+[behavior_server-6] [0m[INFO] [1792258590.159281656] [behavior_server]: Configuring backup[0m
+[behavior_server-6] [0m[INFO] [1792258590.176317247] [behavior_server]: Configuring drive_on_heading[0m
+[behavior_server-6] [0m[INFO] [1792258590.202205950] [behavior_server]: Configuring wait[0m
+[lifecycle_manager-9] [0m[INFO] [1792258590.224024022] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m[0m
+[bt_navigator-7] [0m[INFO] [1792258590.225121005] [bt_navigator]: Configuring[0m
+[bt_navigator-7] [0m[INFO] [1792258590.244357250] [bt_navigator]: Creating navigator id navigate_to_pose of type nav2_bt_navigator::NavigateToPoseNavigator[0m
+[bt_navigator-7] [0m[INFO] [1792258590.561584952] [bt_navigator]: Creating navigator id navigate_through_poses of type nav2_bt_navigator::NavigateThroughPosesNavigator[0m
+[lifecycle_manager-9] [0m[INFO] [1792258590.610073306] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m[0m
+[velocity_smoother-8] [0m[INFO] [1792258590.610647186] [velocity_smoother]: Configuring velocity smoother[0m
+[lifecycle_manager-9] [0m[INFO] [1792258590.621040137] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m[0m
+[controller_server-4] [0m[INFO] [1792258590.622816461] [controller_server]: Activating[0m
+[controller_server-4] [0m[INFO] [1792258590.622871545] [local_costmap.local_costmap]: Activating[0m
+[controller_server-4] [0m[INFO] [1792258590.622881642] [local_costmap.local_costmap]: Checking transform[0m
+[controller_server-4] [0m[INFO] [1792258590.622936577] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258591.123079232] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258591.623046565] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258592.123035660] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258592.623065947] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258593.123041893] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258593.623071977] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258594.123052271] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258594.623696770] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258595.122999032] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258595.623058420] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[goal_adapter-10] [0m[INFO] [1792258596.043885803] [goal_adapter]: DQN planner loaded (36 lattice nodes) from /home/vihanga/Maze-Navigtion-main/ros2_ws/install/maze_dqn/share/maze_dqn/checkpoints/dqn_policy.pt[0m
+[controller_server-4] [0m[INFO] [1792258596.123049180] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[goal_adapter-10] [0m[INFO] [1792258596.210538826] [goal_adapter]: goal_adapter ready, method=baseline; click with '2D Goal Pose'[0m
+[controller_server-4] [0m[INFO] [1792258596.623290857] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258597.123133396] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258597.623157729] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258598.123228627] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258598.623126113] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258599.123224061] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258599.623122451] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258600.123087308] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258600.623199847] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258601.123231060] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258601.623130470] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258602.123748854] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258602.624250664] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258603.123056907] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258603.623027546] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258604.123028664] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258604.623227016] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258605.123107808] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258605.623240346] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258606.123245477] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258606.623211186] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258607.123217352] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258607.623133338] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258608.123056617] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258608.623061375] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258609.123064584] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258609.623135995] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258610.123059522] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258610.623235879] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258611.123298612] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258611.623102855] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258612.123695103] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258612.623238328] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258613.123094858] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258613.623055006] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258614.123251215] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258614.623061828] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258615.123292165] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258615.623265934] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258616.123191827] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258616.623237954] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258617.123244990] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258617.623217506] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258618.123136527] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258618.623248008] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258619.123074999] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258619.623027009] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258620.123645310] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258620.623026556] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258621.123014266] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258621.623272061] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258622.123171609] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258622.623229473] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258623.123035446] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258623.623407945] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258624.123222175] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258624.623205528] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258625.123223516] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258625.623108092] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258626.123005840] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258626.623029189] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258627.123235923] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258627.623103062] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258628.123197337] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258628.623059463] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258629.123039409] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258629.623098279] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258630.123180383] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258630.623005317] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258631.123025637] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258631.623097808] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258632.123230360] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258632.623485456] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258633.123184580] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258633.623052743] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258634.123226799] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258634.623210249] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258635.123192686] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258635.623029304] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258636.123258368] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258636.623229411] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258637.123245239] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258637.623164178] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258638.123218038] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258638.623079099] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258639.123266951] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258639.623170329] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258640.123176827] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258640.623300710] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258641.123538049] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258641.623260939] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258642.123232244] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258642.623245404] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258643.123208582] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258643.623409418] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258644.123190612] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258644.623273178] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258645.123258732] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258645.623174154] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258646.123257036] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258646.623230005] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258647.123276417] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258647.623294578] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258648.123238783] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258648.623060479] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258649.123152980] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258649.623289070] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258650.123028558] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258650.623179137] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258651.123190584] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258651.623263729] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258652.123096119] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258652.623071547] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258653.123269462] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258653.623250671] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258654.123228036] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258654.623261418] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258655.123093122] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258655.623095782] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258656.123040698] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258656.623155177] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258657.123074278] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258657.623028240] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258658.123025336] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258658.623239910] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258659.123263438] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258659.623224639] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258660.123264088] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258660.623252745] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258661.123283978] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258661.623276266] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258662.123140877] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258662.623086180] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258663.123265078] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258663.623125691] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258664.123167361] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258664.623270214] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258665.123267992] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258665.623167499] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258666.123261075] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258666.623261915] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258667.123395167] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258667.623167943] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258668.123246708] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258668.623246863] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258669.123242954] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258669.623254264] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258670.123268589] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258670.623183556] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258671.123219768] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258671.623165146] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258672.123263717] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258672.623258712] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258673.123218817] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258673.623100397] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258674.123250800] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258674.623137242] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258675.123258280] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258675.623105144] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258676.123220979] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258676.623323989] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258677.123092682] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258677.623059987] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258678.123094536] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258678.623115930] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258679.123256292] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258679.623251803] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258680.123155253] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258680.623208611] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258681.123191638] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258681.623251774] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258682.123206900] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258682.623133820] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258683.123216158] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258683.623142085] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258684.123216165] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258684.623211684] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258685.123116303] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258685.623389384] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258686.123234032] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258686.623229302] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258687.123186716] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258687.623367081] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258688.123361134] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258688.623187476] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258689.123179680] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258689.623190894] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258690.123195083] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258690.623130955] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258691.123222023] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258691.623083623] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258692.123047292] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258692.623035126] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258693.123049644] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258693.623084270] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258694.123511653] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258694.623221558] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258695.123028617] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258695.623606462] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258696.123040142] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258696.623088434] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258697.123056600] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258697.623080208] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258698.123070187] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258698.623029631] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258699.123154158] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258699.623072843] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258700.123055031] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258700.623064290] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258701.123065193] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258701.623220827] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258702.123106901] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258702.623041231] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258703.123064464] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258703.623076712] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258704.123841337] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258704.623042637] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258705.123619577] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist[0m
+[controller_server-4] [0m[INFO] [1792258705.623996429] [local_costmap.local_costmap]: start[0m
+[controller_server-4] [0m[INFO] [1792258705.676746577] [controller_server]: Activating controller: FollowPath of type regulated_pure_pursuit_controller::RegulatedPurePursuitController[0m
+[controller_server-4] [0m[INFO] [1792258705.676862378] [controller_server]: Creating bond (controller_server) to lifecycle manager.[0m
+[lifecycle_manager-9] [0m[INFO] [1792258705.687575237] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m[0m
+[planner_server-5] [0m[INFO] [1792258705.688352807] [planner_server]: Activating[0m
+[planner_server-5] [0m[INFO] [1792258705.688438782] [global_costmap.global_costmap]: Activating[0m
+[planner_server-5] [0m[INFO] [1792258705.688457294] [global_costmap.global_costmap]: Checking transform[0m
+[planner_server-5] [0m[INFO] [1792258705.688522429] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist[0m
+[amcl-2] [0m[INFO] [1792258705.735191262] [amcl]: createLaserObject[0m
+[planner_server-5] [0m[INFO] [1792258706.193766739] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.648000 but the earliest data is at time 1.204000, when looking up transform from frame [base_footprint] to frame [map][0m
+[planner_server-5] [0m[INFO] [1792258706.688621066] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1.152000 but the earliest data is at time 1.204000, when looking up transform from frame [base_footprint] to frame [map][0m
+[planner_server-5] [0m[INFO] [1792258707.189744721] [global_costmap.global_costmap]: start[0m
+[planner_server-5] [0m[INFO] [1792258708.209027769] [planner_server]: Activating plugin GridBased of type SmacPlanner2D[0m
+[planner_server-5] [0m[INFO] [1792258708.216213595] [planner_server]: Creating bond (planner_server) to lifecycle manager.[0m
+[lifecycle_manager-9] [0m[INFO] [1792258708.228335607] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m[0m
+[behavior_server-6] [0m[INFO] [1792258708.229527493] [behavior_server]: Activating[0m
+[behavior_server-6] [0m[INFO] [1792258708.229617059] [behavior_server]: Activating spin[0m
+[behavior_server-6] [0m[INFO] [1792258708.229644680] [behavior_server]: Activating backup[0m
+[behavior_server-6] [0m[INFO] [1792258708.229665358] [behavior_server]: Activating drive_on_heading[0m
+[behavior_server-6] [0m[INFO] [1792258708.229685899] [behavior_server]: Activating wait[0m
+[behavior_server-6] [0m[INFO] [1792258708.229719687] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.[0m
+[lifecycle_manager-9] [0m[INFO] [1792258708.247105253] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m[0m
+[bt_navigator-7] [0m[INFO] [1792258708.249306559] [bt_navigator]: Activating[0m
+[bt_navigator-7] [0m[INFO] [1792258708.666526634] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.[0m
+[lifecycle_manager-9] [0m[INFO] [1792258708.685061355] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m[0m
+[velocity_smoother-8] [0m[INFO] [1792258708.685587748] [velocity_smoother]: Activating[0m
+[velocity_smoother-8] [0m[INFO] [1792258708.686919321] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.[0m
+[lifecycle_manager-9] [0m[INFO] [1792258708.702101040] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m[0m
+[amcl-2] [0m[INFO] [1792258790.862324162] [amcl]: initialPoseReceived[0m
+[amcl-2] [33m[WARN] [1792258790.862504228] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 80.934000 but the latest data is at time 80.928000, when looking up transform from frame [base_footprint] to frame [odom])[0m
+[amcl-2] [0m[INFO] [1792258790.864012182] [amcl]: Setting pose (80.934000): -1.250 -1.250 0.000[0m
+[amcl-2] [0m[INFO] [1792258791.695348159] [amcl]: initialPoseReceived[0m
+[amcl-2] [33m[WARN] [1792258791.695490068] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 81.498000 but the latest data is at time 81.468000, when looking up transform from frame [base_footprint] to frame [odom])[0m
+[amcl-2] [0m[INFO] [1792258791.695530099] [amcl]: Setting pose (81.498000): -1.250 -1.250 0.000[0m
+[amcl-2] [0m[INFO] [1792258792.210279004] [amcl]: initialPoseReceived[0m
+[amcl-2] [33m[WARN] [1792258792.211040269] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 81.906000 but the latest data is at time 81.864000, when looking up transform from frame [base_footprint] to frame [odom])[0m
+[amcl-2] [0m[INFO] [1792258792.211078971] [amcl]: Setting pose (81.906000): -1.250 -1.250 0.000[0m
+[controller_server-4] [0m[INFO] [1792258792.718692914] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap[0m
+[planner_server-5] [0m[INFO] [1792258792.729182305] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap[0m
+[goal_adapter-10] [0m[INFO] [1792258796.979868475] [goal_adapter]: [20261017-230956-baseline-001] goal (0.25,-1.25,0.00) from (-1.25,-1.24)[0m
+[bt_navigator-7] [0m[INFO] [1792258797.052891951] [bt_navigator]: Begin navigating from current location (-1.25, -1.24) to (0.25, -1.25)[0m
+[controller_server-4] [0m[INFO] [1792258797.110239662] [controller_server]: Received a goal, begin computing control effort.[0m
+[controller_server-4] [33m[WARN] [1792258797.110328800] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.[0m
+[controller_server-4] [33m[WARN] [1792258797.110348279] [controller_server]: No progress checker was specified in parameter 'current_progress_checker'. Server will use only plugin loaded progress_checker . This warning will appear once.[0m
+[controller_server-4] [0m[INFO] [1792258798.410491855] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258799.310497148] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258800.410845585] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258801.410484983] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258802.413897706] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258803.513132262] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258804.514666954] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258805.510591814] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258806.610496852] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258807.610852817] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258808.611707713] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258809.610495942] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258810.510561058] [controller_server]: Reached the goal![0m
+[bt_navigator-7] [0m[INFO] [1792258810.533225699] [bt_navigator]: Goal succeeded[0m
+[goal_adapter-10] [0m[INFO] [1792258813.852314603] [goal_adapter]: [20261017-230956-baseline-001] succeeded success=1 sim=11.1s wall=13.5s len=1.42m err=0.101m true_err=0.084m collisions=0[0m
+[amcl-2] [0m[INFO] [1792258815.932790732] [amcl]: initialPoseReceived[0m
+[amcl-2] [33m[WARN] [1792258815.932987434] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 101.550000 but the latest data is at time 101.520000, when looking up transform from frame [base_footprint] to frame [odom])[0m
+[amcl-2] [0m[INFO] [1792258815.933018621] [amcl]: Setting pose (101.550000): -1.250 -1.250 0.000[0m
+[amcl-2] [0m[INFO] [1792258816.440774165] [amcl]: initialPoseReceived[0m
+[amcl-2] [33m[WARN] [1792258816.440914180] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 102.036000 but the latest data is at time 102.024000, when looking up transform from frame [base_footprint] to frame [odom])[0m
+[amcl-2] [0m[INFO] [1792258816.440940714] [amcl]: Setting pose (102.036000): -1.250 -1.250 0.000[0m
+[amcl-2] [0m[INFO] [1792258816.941948554] [amcl]: initialPoseReceived[0m
+[amcl-2] [33m[WARN] [1792258816.942076854] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 102.510000 but the latest data is at time 102.492000, when looking up transform from frame [base_footprint] to frame [odom])[0m
+[amcl-2] [0m[INFO] [1792258816.942685404] [amcl]: Setting pose (102.510000): -1.250 -1.250 0.000[0m
+[controller_server-4] [0m[INFO] [1792258817.448871734] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap[0m
+[planner_server-5] [0m[INFO] [1792258817.467738128] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap[0m
+[goal_adapter-10] [0m[INFO] [1792258821.581719292] [goal_adapter]: [20261017-231021-dqn-002] goal (0.25,-1.25,0.00) from (-1.24,-1.25)[0m
+[controller_server-4] [0m[INFO] [1792258822.072230604] [controller_server]: Received a goal, begin computing control effort.[0m
+[controller_server-4] [0m[INFO] [1792258833.772904060] [controller_server]: Reached the goal![0m
+[goal_adapter-10] [0m[INFO] [1792258837.148568955] [goal_adapter]: [20261017-231021-dqn-002] succeeded success=1 sim=10.2s wall=11.7s len=1.42m err=0.072m true_err=0.084m collisions=0[0m
+[amcl-2] [0m[INFO] [1792258839.457640925] [amcl]: initialPoseReceived[0m
+[amcl-2] [0m[INFO] [1792258839.457714688] [amcl]: Setting pose (121.176000): -1.250 -1.250 0.000[0m
+[amcl-2] [0m[INFO] [1792258839.960189901] [amcl]: initialPoseReceived[0m
+[amcl-2] [33m[WARN] [1792258839.960296604] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 121.632000 but the latest data is at time 121.608000, when looking up transform from frame [base_footprint] to frame [odom])[0m
+[amcl-2] [0m[INFO] [1792258839.960316372] [amcl]: Setting pose (121.632000): -1.250 -1.250 0.000[0m
+[amcl-2] [0m[INFO] [1792258840.467153546] [amcl]: initialPoseReceived[0m
+[amcl-2] [33m[WARN] [1792258840.471261099] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 122.046000 but the latest data is at time 122.040000, when looking up transform from frame [base_footprint] to frame [odom])[0m
+[amcl-2] [0m[INFO] [1792258840.471341740] [amcl]: Setting pose (122.046000): -1.250 -1.250 0.000[0m
+[controller_server-4] [0m[INFO] [1792258840.971066634] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap[0m
+[planner_server-5] [0m[INFO] [1792258840.977222363] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap[0m
+[goal_adapter-10] [0m[INFO] [1792258845.023946842] [goal_adapter]: [20261017-231045-baseline-003] goal (-1.25,0.75,1.57) from (-1.25,-1.24)[0m
+[bt_navigator-7] [0m[INFO] [1792258845.092196661] [bt_navigator]: Begin navigating from current location (-1.25, -1.24) to (-1.25, 0.75)[0m
+[controller_server-4] [0m[INFO] [1792258845.135601574] [controller_server]: Received a goal, begin computing control effort.[0m
+[controller_server-4] [0m[INFO] [1792258846.236237117] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258847.236512733] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258848.337630388] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258849.338429976] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258850.343289148] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258851.440884047] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258852.437979985] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258853.536218923] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258854.537062842] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258855.636349056] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258856.639671214] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258857.637867580] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258858.739598243] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258859.737731652] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258860.741595341] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258861.736612843] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258862.835867586] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258863.835827971] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258864.937216554] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258865.937622099] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258866.937283021] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258867.937646936] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258869.038587802] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258870.038428250] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258871.036363348] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258872.038496963] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258873.136625643] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258874.140102644] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258875.135835890] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258876.235956552] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258877.236975974] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258877.738882167] [controller_server]: Reached the goal![0m
+[bt_navigator-7] [0m[INFO] [1792258877.761406866] [bt_navigator]: Goal succeeded[0m
+[goal_adapter-10] [0m[INFO] [1792258881.136840927] [goal_adapter]: [20261017-231045-baseline-003] succeeded success=1 sim=26.4s wall=32.8s len=2.45m err=0.080m true_err=0.110m collisions=0[0m
+[controller_server-4] [33m[WARN] [1792258882.226676776] [local_costmap.local_costmap]: Sensor origin at (-1.27, 0.61) is out of map bounds (-2.25, -2.23) to (-0.26, -0.24). The costmap cannot raytrace for it.[0m
+[amcl-2] [0m[INFO] [1792258883.154215149] [amcl]: initialPoseReceived[0m
+[amcl-2] [33m[WARN] [1792258883.154371714] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 157.170000 but the latest data is at time 157.140000, when looking up transform from frame [base_footprint] to frame [odom])[0m
+[amcl-2] [0m[INFO] [1792258883.154391207] [amcl]: Setting pose (157.170000): -1.250 -1.250 0.000[0m
+[amcl-2] [0m[INFO] [1792258883.655042839] [amcl]: initialPoseReceived[0m
+[amcl-2] [33m[WARN] [1792258883.655153973] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 157.608000 but the latest data is at time 157.572000, when looking up transform from frame [base_footprint] to frame [odom])[0m
+[amcl-2] [0m[INFO] [1792258883.655187815] [amcl]: Setting pose (157.608000): -1.250 -1.250 0.000[0m
+[amcl-2] [0m[INFO] [1792258884.158990459] [amcl]: initialPoseReceived[0m
+[amcl-2] [33m[WARN] [1792258884.159102137] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 158.040000 but the latest data is at time 158.004000, when looking up transform from frame [base_footprint] to frame [odom])[0m
+[amcl-2] [0m[INFO] [1792258884.159131450] [amcl]: Setting pose (158.040000): -1.250 -1.250 0.000[0m
+[controller_server-4] [0m[INFO] [1792258884.666775058] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap[0m
+[planner_server-5] [0m[INFO] [1792258884.680895353] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap[0m
+[goal_adapter-10] [0m[INFO] [1792258888.735860541] [goal_adapter]: [20261017-231128-dqn-004] goal (-1.25,0.75,1.57) from (-1.24,-1.24)[0m
+[controller_server-4] [0m[INFO] [1792258889.208916022] [controller_server]: Received a goal, begin computing control effort.[0m
+[controller_server-4] [0m[INFO] [1792258915.810594714] [controller_server]: Reached the goal![0m
+[goal_adapter-10] [0m[INFO] [1792258919.842245444] [goal_adapter]: [20261017-231128-dqn-004] succeeded success=1 sim=22.6s wall=26.6s len=2.68m err=0.073m true_err=0.092m collisions=0[0m
+[controller_server-4] [33m[WARN] [1792258921.026070127] [local_costmap.local_costmap]: Sensor origin at (-1.30, 0.65) is out of map bounds (-2.25, -2.23) to (-0.26, -0.24). The costmap cannot raytrace for it.[0m
+[amcl-2] [0m[INFO] [1792258921.922345390] [amcl]: initialPoseReceived[0m
+[amcl-2] [0m[INFO] [1792258921.922467899] [amcl]: Setting pose (189.900000): -1.250 -1.250 0.000[0m
+[amcl-2] [0m[INFO] [1792258922.426615029] [amcl]: initialPoseReceived[0m
+[amcl-2] [33m[WARN] [1792258922.426718277] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 190.314000 but the latest data is at time 190.296000, when looking up transform from frame [base_footprint] to frame [odom])[0m
+[amcl-2] [0m[INFO] [1792258922.426736089] [amcl]: Setting pose (190.314000): -1.250 -1.250 0.000[0m
+[amcl-2] [0m[INFO] [1792258922.928185977] [amcl]: initialPoseReceived[0m
+[amcl-2] [33m[WARN] [1792258922.929344402] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 190.746000 but the latest data is at time 190.728000, when looking up transform from frame [base_footprint] to frame [odom])[0m
+[amcl-2] [0m[INFO] [1792258922.929422059] [amcl]: Setting pose (190.746000): -1.250 -1.250 0.000[0m
+[controller_server-4] [0m[INFO] [1792258923.432943278] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap[0m
+[planner_server-5] [0m[INFO] [1792258923.437138056] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap[0m
+[goal_adapter-10] [0m[INFO] [1792258927.538218381] [goal_adapter]: [20261017-231207-baseline-005] goal (1.25,0.25,0.00) from (-1.24,-1.25)[0m
+[bt_navigator-7] [0m[INFO] [1792258927.651253632] [bt_navigator]: Begin navigating from current location (-1.24, -1.25) to (1.25, 0.25)[0m
+[controller_server-4] [0m[INFO] [1792258927.684927831] [controller_server]: Received a goal, begin computing control effort.[0m
+[controller_server-4] [0m[INFO] [1792258928.787979231] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258929.785250756] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258930.885400321] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258931.989330558] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258932.986249566] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258934.085162309] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258935.085631057] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258936.194771636] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258937.185290865] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258938.185244096] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258939.285163867] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258940.285748759] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258941.386757597] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258942.385944853] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258943.485199118] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258944.489850921] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258945.585981314] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258946.686591473] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258947.685316059] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258948.805575758] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258949.785988470] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258950.887137547] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258951.985499707] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258952.985294954] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258954.085230997] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258955.185514148] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258956.189646134] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258957.189603030] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258958.185449151] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258959.286397629] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258960.285259309] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258961.385379178] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258962.385376068] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258963.486122060] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258964.586839246] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258965.585715806] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258966.685148091] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258967.706874648] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258968.685948622] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258969.786999684] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258970.785177488] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258971.885222620] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258972.985762366] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258973.985204179] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258975.092912978] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258976.085761422] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258977.185458519] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258978.186751416] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258979.185258719] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258980.286910797] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258981.285391087] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258982.285610303] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [33m[WARN] [1792258983.190147470] [controller_server]: RegulatedPurePursuitController detected collision ahead![0m
+[controller_server-4] [0m[INFO] [1792258983.385205892] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258984.390525624] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258985.388291012] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258986.489376573] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258987.487585574] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258988.485298666] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258989.585192189] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258990.585208017] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258991.591569111] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258992.688340299] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258993.685879385] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258994.686620668] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258995.793070228] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258996.785338807] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258997.786706466] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258998.885641056] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792258999.885149530] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259001.003622947] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259001.985149235] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259002.985328729] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259003.985627788] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259005.086604270] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259006.085420690] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259007.085236951] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259008.186115881] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259009.186652703] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259010.186598807] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259011.287618739] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259012.285519633] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259013.285147381] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259014.285327888] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259015.391229573] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259016.385161655] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259017.392966332] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259018.385206716] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259019.485922290] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259020.486100998] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259021.485433800] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259022.485156982] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259023.585535106] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259024.585617004] [controller_server]: Passing new path to controller.[0m
+[controller_server-4] [0m[INFO] [1792259024.686726358] [controller_server]: Reached the goal![0m
+[bt_navigator-7] [0m[INFO] [1792259024.710983618] [bt_navigator]: Goal succeeded[0m
+[goal_adapter-10] [0m[INFO] [1792259027.607265622] [goal_adapter]: [20261017-231207-baseline-005] succeeded success=1 sim=84.3s wall=97.1s len=6.95m err=0.061m true_err=0.129m collisions=0[0m
+[controller_server-4] [33m[WARN] [1792259029.027025408] [local_costmap.local_costmap]: Sensor origin at (1.19, 0.37) is out of map bounds (-2.23, -2.23) to (-0.24, -0.24). The costmap cannot raytrace for it.[0m
+[amcl-2] [0m[INFO] [1792259029.914620060] [amcl]: initialPoseReceived[0m
+[amcl-2] [33m[WARN] [1792259029.914727324] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 283.296000 but the latest data is at time 283.284000, when looking up transform from frame [base_footprint] to frame [odom])[0m
+[amcl-2] [0m[INFO] [1792259029.914745425] [amcl]: Setting pose (283.296000): -1.250 -1.250 0.000[0m
+[amcl-2] [0m[INFO] [1792259030.452119019] [amcl]: initialPoseReceived[0m
+[amcl-2] [33m[WARN] [1792259030.452221372] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 283.782000 but the latest data is at time 283.752000, when looking up transform from frame [base_footprint] to frame [odom])[0m
+[amcl-2] [0m[INFO] [1792259030.452238033] [amcl]: Setting pose (283.782000): -1.250 -1.250 0.000[0m
+[amcl-2] [0m[INFO] [1792259030.964285130] [amcl]: initialPoseReceived[0m
+[amcl-2] [33m[WARN] [1792259030.964400156] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 284.196000 but the latest data is at time 284.184000, when looking up transform from frame [base_footprint] to frame [odom])[0m
+[amcl-2] [0m[INFO] [1792259030.964440393] [amcl]: Setting pose (284.196000): -1.250 -1.250 0.000[0m
+[controller_server-4] [0m[INFO] [1792259031.481162914] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap[0m
+[planner_server-5] [0m[INFO] [1792259031.489922048] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap[0m
+[goal_adapter-10] [0m[INFO] [1792259035.537335165] [goal_adapter]: [20261017-231355-dqn-006] goal (1.25,0.25,0.00) from (-1.26,-1.24)[0m
+[controller_server-4] [0m[INFO] [1792259036.225032399] [controller_server]: Received a goal, begin computing control effort.[0m
+[controller_server-4] [0m[INFO] [1792259118.628455201] [controller_server]: Reached the goal![0m
+[goal_adapter-10] [0m[INFO] [1792259121.156703221] [goal_adapter]: [20261017-231355-dqn-006] succeeded success=1 sim=72.6s wall=82.5s len=7.78m err=0.079m true_err=0.144m collisions=0[0m
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [goal_adapter-10]: sending signal 'SIGINT' to process[goal_adapter-10]
+[INFO] [lifecycle_manager-9]: sending signal 'SIGINT' to process[lifecycle_manager-9]
+[INFO] [velocity_smoother-8]: sending signal 'SIGINT' to process[velocity_smoother-8]
+[INFO] [bt_navigator-7]: sending signal 'SIGINT' to process[bt_navigator-7]
+[INFO] [behavior_server-6]: sending signal 'SIGINT' to process[behavior_server-6]
+[INFO] [planner_server-5]: sending signal 'SIGINT' to process[planner_server-5]
+[INFO] [controller_server-4]: sending signal 'SIGINT' to process[controller_server-4]
+[INFO] [lifecycle_manager-3]: sending signal 'SIGINT' to process[lifecycle_manager-3]
+[INFO] [amcl-2]: sending signal 'SIGINT' to process[amcl-2]
+[INFO] [map_server-1]: sending signal 'SIGINT' to process[map_server-1]
+[lifecycle_manager-9] [0m[INFO] [1792259277.177658427] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[lifecycle_manager-9] [0m[INFO] [1792259277.177852769] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)[0m
+[bt_navigator-7] [0m[INFO] [1792259277.181725219] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[bt_navigator-7] [0m[INFO] [1792259277.181861766] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)[0m
+[velocity_smoother-8] [0m[INFO] [1792259277.184152150] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[velocity_smoother-8] [0m[INFO] [1792259277.184393351] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)[0m
+[velocity_smoother-8] [0m[INFO] [1792259277.184522477] [velocity_smoother]: Deactivating[0m
+[velocity_smoother-8] [0m[INFO] [1792259277.186644394] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.[0m
+[bt_navigator-7] [0m[INFO] [1792259277.188472421] [bt_navigator]: Deactivating[0m
+[bt_navigator-7] [0m[INFO] [1792259277.188698470] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.[0m
+[behavior_server-6] [0m[INFO] [1792259277.199100342] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[behavior_server-6] [0m[INFO] [1792259277.199294443] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)[0m
+[behavior_server-6] [0m[INFO] [1792259277.199452673] [behavior_server]: Deactivating[0m
+[behavior_server-6] [0m[INFO] [1792259277.199521420] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.[0m
+[bt_navigator-7] [0m[INFO] [1792259277.200986994] [bt_navigator]: Cleaning up[0m
+[velocity_smoother-8] [0m[INFO] [1792259277.202576234] [velocity_smoother]: Cleaning up[0m
+[velocity_smoother-8] [0m[INFO] [1792259277.202630653] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.[0m
+[planner_server-5] [0m[INFO] [1792259277.207995785] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[planner_server-5] [0m[INFO] [1792259277.208167189] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)[0m
+[planner_server-5] [0m[INFO] [1792259277.208325476] [planner_server]: Deactivating[0m
+[planner_server-5] [0m[INFO] [1792259277.209197225] [global_costmap.global_costmap]: Deactivating[0m
+[behavior_server-6] [0m[INFO] [1792259277.210311010] [behavior_server]: Cleaning up[0m
+[controller_server-4] [0m[INFO] [1792259277.215281166] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[controller_server-4] [0m[INFO] [1792259277.215416950] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)[0m
+[controller_server-4] [0m[INFO] [1792259277.220728237] [controller_server]: Deactivating[0m
+[controller_server-4] [0m[INFO] [1792259277.222126510] [controller_server]: Deactivating controller: FollowPath of type regulated_pure_pursuit_controller::RegulatedPurePursuitController[0m
+[controller_server-4] [0m[INFO] [1792259277.223182167] [local_costmap.local_costmap]: Deactivating[0m
+[controller_server-4] [0m[INFO] [1792259277.238136158] [controller_server]: Destroying bond (controller_server) to lifecycle manager.[0m
+[controller_server-4] [0m[INFO] [1792259277.249515893] [controller_server]: Cleaning up[0m
+[controller_server-4] [0m[INFO] [1792259277.249968048] [controller_server]: Cleaning up controller: FollowPath of type regulated_pure_pursuit_controller::RegulatedPurePursuitController[0m
+[controller_server-4] [0m[INFO] [1792259277.250120198] [local_costmap.local_costmap]: Cleaning up[0m
+[lifecycle_manager-3] [0m[INFO] [1792259277.223479890] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[lifecycle_manager-3] [0m[INFO] [1792259277.223685514] [lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)[0m
+[velocity_smoother-8] [0m[INFO] [1792259277.271630528] [velocity_smoother]: Destroying[0m
+[behavior_server-6] [0m[INFO] [1792259277.282999947] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.[0m
+[lifecycle_manager-9] [0m[INFO] [1792259277.302680287] [lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation[0m
+[amcl-2] [0m[INFO] [1792259277.308874377] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[amcl-2] [0m[INFO] [1792259277.309091110] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)[0m
+[amcl-2] [0m[INFO] [1792259277.309650545] [amcl]: Deactivating[0m
+[amcl-2] [0m[INFO] [1792259277.309740790] [amcl]: Destroying bond (amcl) to lifecycle manager.[0m
+[amcl-2] [0m[INFO] [1792259277.331503288] [amcl]: Cleaning up[0m
+[map_server-1] [0m[INFO] [1792259277.334871984] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[map_server-1] [0m[INFO] [1792259277.335070260] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)[0m
+[lifecycle_manager-3] [0m[INFO] [1792259277.335310224] [lifecycle_manager_localization]: Destroying lifecycle_manager_localization[0m
+[amcl-2] [0m[INFO] [1792259277.356011732] [amcl]: Destroying bond (amcl) to lifecycle manager.[0m
+[map_server-1] [0m[INFO] [1792259277.360291010] [map_server]: Deactivating[0m
+[map_server-1] [0m[INFO] [1792259277.371826636] [map_server]: Destroying bond (map_server) to lifecycle manager.[0m
+[map_server-1] [0m[INFO] [1792259277.384071314] [map_server]: Cleaning up[0m
+[map_server-1] [0m[INFO] [1792259277.384166233] [map_server]: Destroying bond (map_server) to lifecycle manager.[0m
+[map_server-1] [0m[INFO] [1792259277.429030721] [map_server]: Destroying[0m
+[amcl-2] [0m[INFO] [1792259277.514163266] [amcl]: Destroying[0m
+[INFO] [lifecycle_manager-3]: process has finished cleanly [pid 60005]
+[INFO] [velocity_smoother-8]: process has finished cleanly [pid 60010]
+[INFO] [map_server-1]: process has finished cleanly [pid 60003]
+[controller_server-4] [0m[INFO] [1792259277.669164271] [controller_server]: Destroying bond (controller_server) to lifecycle manager.[0m
+[controller_server-4] [0m[INFO] [1792259277.694901299] [local_costmap.local_costmap]: Destroying[0m
+[behavior_server-6] [0m[INFO] [1792259277.696696450] [behavior_server]: Destroying[0m
+[INFO] [lifecycle_manager-9]: process has finished cleanly [pid 60011]
+[controller_server-4] [0m[INFO] [1792259277.749859731] [controller_server]: Destroying[0m
+[INFO] [amcl-2]: process has finished cleanly [pid 60004]
+[bt_navigator-7] [0m[INFO] [1792259277.931394599] [bt_navigator]: Completed Cleaning up[0m
+[bt_navigator-7] [0m[INFO] [1792259277.931465397] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.[0m
+[bt_navigator-7] [0m[INFO] [1792259277.936708185] [bt_navigator]: Destroying[0m
+[INFO] [controller_server-4]: process has finished cleanly [pid 60006]
+[INFO] [behavior_server-6]: process has finished cleanly [pid 60008]
+[INFO] [bt_navigator-7]: process has finished cleanly [pid 60009]
+[planner_server-5] [0m[INFO] [1792259278.193891307] [planner_server]: Deactivating plugin GridBased of type SmacPlanner2D[0m
+[planner_server-5] [0m[INFO] [1792259278.193983506] [planner_server]: Destroying bond (planner_server) to lifecycle manager.[0m
+[planner_server-5] [0m[INFO] [1792259278.204372456] [planner_server]: Cleaning up[0m
+[planner_server-5] [0m[INFO] [1792259278.293526243] [global_costmap.global_costmap]: Cleaning up[0m
+[planner_server-5] [0m[INFO] [1792259278.302173847] [planner_server]: Cleaning up plugin GridBased of type SmacPlanner2D[0m
+[planner_server-5] [0m[INFO] [1792259278.303022015] [planner_server]: Destroying plugin GridBased of type SmacPlanner2D[0m
+[planner_server-5] [0m[INFO] [1792259278.469296533] [planner_server]: Destroying bond (planner_server) to lifecycle manager.[0m
+[planner_server-5] [0m[INFO] [1792259278.485669415] [global_costmap.global_costmap]: Destroying[0m
+[planner_server-5] [0m[INFO] [1792259278.519756790] [planner_server]: Destroying[0m
+[INFO] [planner_server-5]: process has finished cleanly [pid 60007]
+[INFO] [goal_adapter-10]: process has finished cleanly [pid 60012]

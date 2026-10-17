@@ -1,0 +1,16 @@
+[0m[INFO] [1792259683.272754841] [map_saver]: 
+	map_saver lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.[0m
+[0m[INFO] [1792259683.272974877] [map_saver]: Creating[0m
+[0m[INFO] [1792259683.273099201] [map_saver]: Configuring[0m
+[0m[INFO] [1792259683.281531379] [map_saver]: Saving map from 'map' topic to '/home/vihanga/Maze-Navigtion-main/maps/current/maze' file[0m
+[33m[WARN] [1792259683.281606433] [map_saver]: Free threshold unspecified. Setting it to default value: 0.250000[0m
+[33m[WARN] [1792259683.281618408] [map_saver]: Occupied threshold unspecified. Setting it to default value: 0.650000[0m
+[33m[WARN] [1792259683.586867993] [map_io]: Image format unspecified. Setting it to: pgm[0m
+[0m[INFO] [1792259683.587871372] [map_io]: Received a 121 X 122 map @ 0.025 m/pix[0m
+[0m[INFO] [1792259683.628214022] [map_io]: Writing map occupancy data to /home/vihanga/Maze-Navigtion-main/maps/current/maze.pgm[0m
+[0m[INFO] [1792259683.633443436] [map_io]: Writing map metadata to /home/vihanga/Maze-Navigtion-main/maps/current/maze.yaml[0m
+[0m[INFO] [1792259683.635471750] [map_io]: Map saved[0m
+[0m[INFO] [1792259683.635511635] [map_saver]: Map saved successfully[0m
+[0m[INFO] [1792259683.641504978] [map_saver]: Destroying[0m

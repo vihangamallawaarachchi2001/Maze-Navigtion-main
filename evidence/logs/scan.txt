@@ -1,0 +1,5 @@
+stamp:
+  sec: 28
+  nanosec: 602000000
+frame_id: base_scan
+---

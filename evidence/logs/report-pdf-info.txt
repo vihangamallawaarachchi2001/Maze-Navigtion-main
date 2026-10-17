@@ -1,0 +1,22 @@
+Title:           IE4060 Assignment 02 — Verified Robotics Project
+Subject:         (unspecified)
+Keywords:        
+Author:          (anonymous)
+Creator:         (unspecified)
+Producer:        ReportLab PDF Library - www.reportlab.com
+CreationDate:    Sun Oct 18 05:04:25 2026 +0530
+ModDate:         Sun Oct 18 05:04:25 2026 +0530
+Custom Metadata: no
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           6
+Encrypted:       no
+Page size:       595.44 x 841.68 pts (A4)
+Page rot:        0
+File size:       415633 bytes
+Optimized:       no
+PDF version:     1.4

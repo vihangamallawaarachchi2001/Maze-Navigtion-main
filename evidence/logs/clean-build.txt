@@ -1,0 +1,6 @@
+Starting >>> maze_dqn
+Finished <<< maze_dqn [11.9s]
+Starting >>> maze_bringup
+Finished <<< maze_bringup [8.56s]
+
+Summary: 2 packages finished [21.8s]

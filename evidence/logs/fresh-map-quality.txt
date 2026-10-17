@@ -1,0 +1,5 @@
+SLAM map: 121x122 @ 0.025 m, origin (-1.502, -1.521)
+occupied cells: 2572
+wall alignment: median 0.012 m, p95 0.056 m, within 0.05 m 90.3 %, within 0.10 m 100.0 %
+coverage of reference free space: 78.9 %
+reference wall centre-line cells marked free by SLAM: 0.00 %

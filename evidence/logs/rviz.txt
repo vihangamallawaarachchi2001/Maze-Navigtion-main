@@ -1,0 +1,27 @@
+[0m[INFO] [1792258779.870305085] [rviz2]: Stereo is NOT SUPPORTED[0m
+[0m[INFO] [1792258779.870462699] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)[0m
+[0m[INFO] [1792258780.568474800] [rviz2]: Stereo is NOT SUPPORTED[0m
+[0m[INFO] [1792258784.786507588] [rviz2]: Trying to create a map of size 123 x 124 using 1 swatches[0m
+[0m[INFO] [1792258784.787270034] [rviz2]: Trying to create a map of size 123 x 124 using 1 swatches[0m
+[31m[ERROR] [1792258784.962689347] [rviz2]: rviz/glsl120/indexed_8bit_image.vert
+rviz/glsl120/indexed_8bit_image.frag
+ GLSL link result : 
+active samplers with a different type refer to the same texture image unit[0m
+[0m[INFO] [1792259281.342289194] [rviz]: Message Filter dropping message: frame 'base_scan' at time 505.404 for reason 'discarding message because the queue is full'[0m
+[0m[INFO] [1792259284.569948621] [rviz]: Message Filter dropping message: frame 'base_scan' at time 508.002 for reason 'discarding message because the queue is full'[0m
+[0m[INFO] [1792259289.232173050] [rviz2]: Trying to create a map of size 119 x 45 using 1 swatches[0m
+[0m[INFO] [1792259293.433500977] [rviz2]: Trying to create a map of size 120 x 45 using 1 swatches[0m
+[0m[INFO] [1792259295.182741001] [rviz2]: Trying to create a map of size 120 x 78 using 1 swatches[0m
+[0m[INFO] [1792259359.213826341] [rviz2]: Trying to create a map of size 121 x 78 using 1 swatches[0m
+[0m[INFO] [1792259365.264282373] [rviz2]: Trying to create a map of size 121 x 80 using 1 swatches[0m
+[0m[INFO] [1792259379.218759573] [rviz2]: Trying to create a map of size 121 x 81 using 1 swatches[0m
+[0m[INFO] [1792259395.237252148] [rviz2]: Trying to create a map of size 121 x 121 using 1 swatches[0m
+[0m[INFO] [1792259533.244830420] [rviz2]: Trying to create a map of size 121 x 122 using 1 swatches[0m
+[0m[INFO] [1792259784.087994464] [rviz]: Message Filter dropping message: frame 'base_scan' at time 936.804 for reason 'discarding message because the queue is full'[0m
+[0m[INFO] [1792259787.108192700] [rviz]: Message Filter dropping message: frame 'base_scan' at time 939.402 for reason 'discarding message because the queue is full'[0m
+[0m[INFO] [1792259787.576940809] [rviz2]: Trying to create a map of size 123 x 124 using 1 swatches[0m
+[0m[INFO] [1792259964.772459546] [rviz2]: Setting goal pose: Frame:map, Position(0.28125, -1.23438, 0), Orientation(0, 0, 0, 1) = Angle: 0[0m
+[0m[INFO] [1792259998.712988803] [rviz2]: Setting goal pose: Frame:map, Position(0.28125, -1.23438, 0), Orientation(0, 0, 0, 1) = Angle: 0[0m
+[0m[INFO] [1792260023.096474490] [rviz2]: Setting goal pose: Frame:map, Position(-1.21875, 0.765625, 0), Orientation(0, 0, 0.721675, 0.692232) = Angle: 1.61244[0m
+[0m[INFO] [1792260062.761039665] [rviz2]: Setting goal pose: Frame:map, Position(1.28125, 0.265625, 0), Orientation(0, 0, 0, 1) = Angle: 0[0m
+[0m[INFO] [1792260316.802059329] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
