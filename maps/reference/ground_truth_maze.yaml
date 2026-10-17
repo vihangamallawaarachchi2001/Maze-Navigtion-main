@@ -1,0 +1,8 @@
+# GEOMETRY-DERIVED REFERENCE MAP (maze_v1_18seg_t0.05_h0.30) - NOT a SLAM result.
+image: ground_truth_maze.pgm
+mode: trinary
+resolution: 0.02
+origin: [-1.6250, -1.6250, 0.0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.25

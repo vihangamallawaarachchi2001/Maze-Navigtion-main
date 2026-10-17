@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>maze_dqn</name>
+  <version>1.0.0</version>
+  <description>Goal-conditioned Deep Q-Network route planner for the IE4060 maze (PyTorch).</description>
+  <maintainer email="dewminigamage22@gmail.com">IE4060 group</maintainer>
+  <license>MIT</license>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <test_depend>python3-pytest</test_depend>
+  <export><build_type>ament_python</build_type></export>
+</package>

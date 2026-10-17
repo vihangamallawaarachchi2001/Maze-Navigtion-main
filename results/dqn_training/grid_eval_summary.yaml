@@ -1,0 +1,16 @@
+train:
+  pairs: 1071
+  success: 1071
+  success_rate: 1.0
+  optimal_length_rate: 1.0
+  mean_ref_over_learned_length_successes: 1.0
+  failures: {}
+  mean_inference_ms: 0.677
+eval:
+  pairs: 189
+  success: 189
+  success_rate: 1.0
+  optimal_length_rate: 1.0
+  mean_ref_over_learned_length_successes: 1.0
+  failures: {}
+  mean_inference_ms: 0.529

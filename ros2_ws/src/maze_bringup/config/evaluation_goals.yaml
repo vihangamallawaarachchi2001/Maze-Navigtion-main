@@ -1,0 +1,16 @@
+# Shared evaluation scenarios for the baseline (Nav2 Dijkstra) vs DQN comparison.
+# Coordinates in the SLAM map frame (== Gazebo world frame, docs/map_provenance.md), metres / radians.
+# Chosen from the maze graph (BFS from the spawn cell): moves / turns along the shortest cell route.
+world_name: assignment_maze
+model_name: turtlebot3_burger
+world_minus_map: [0.0, 0.0]
+scenarios:
+  - name: G1_short_corridor      # 3 moves, 0 turns, straight bottom corridor
+    start_map: [-1.25, -1.25, 0.0]
+    goal_map: [0.25, -1.25, 0.0]
+  - name: G2_turning             # 6 moves, 3 turns, up the left corridor
+    start_map: [-1.25, -1.25, 0.0]
+    goal_map: [-1.25, 0.75, 1.5708]
+  - name: G3_far                 # 18 moves, 13 turns, farthest cell from the start
+    start_map: [-1.25, -1.25, 0.0]
+    goal_map: [1.25, 0.25, 0.0]

@@ -1,0 +1,26 @@
+# DQN route-planner hyperparameters (all logged with every checkpoint)
+seed: 42
+torch_threads: 2
+lattice_pitch_m: 0.5        # maze corridor pitch
+min_clearance_m: 0.154      # Burger circumscribed radius 0.124 m + 0.03 m margin
+node_refine_m: 0.08         # node moved to observed corridor centre within +-8 cm
+max_steps: 60
+reward_goal: 100.0
+reward_collision: -100.0
+reward_step: -1.0
+shaping_scale: 1.0          # Euclidean progress shaping, in cells
+eval_fraction: 0.15         # held-out start/goal pairs, never used for training
+episodes: 30000
+hidden: [256, 256]
+lr: 0.0005
+gamma: 0.97
+double_dqn: true
+buffer_size: 100000
+batch_size: 128
+warmup_steps: 2000
+train_every: 1
+target_sync_steps: 1000
+epsilon_start: 1.0
+epsilon_end: 0.05
+epsilon_decay_fraction: 0.6
+eval_every: 1000

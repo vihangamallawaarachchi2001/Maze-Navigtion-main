@@ -1,0 +1,7 @@
+# Single source of the robot start pose (world frame of assignment_maze, metres / radians).
+# Cell (col 0,row 0) = bottom-left corridor cell centre. Validated by tools/validate_spawn.py:
+# clearance to nearest wall surface 0.225 m > Burger circumscribed radius 0.124 m (in-place rotation safe).
+safe_x: -1.25
+safe_y: -1.25
+safe_z: 0.01
+safe_yaw: 0.0
